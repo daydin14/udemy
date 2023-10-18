@@ -13,7 +13,9 @@ const dummyTransactions = [
     { id: 4, text: 'Camera', amount: 150 },
 ];
 
-let transactions = dummyTransactions;
+const localStorageTransactions = JSON.parse(localStorage.getItem('transactions'));
+
+let transactions = localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
 
 // Add Transaction
 function addTransaction(e) {
@@ -29,6 +31,7 @@ function addTransaction(e) {
         transactions.push(transaction);
         addTransactionDOM(transaction);
         updateValues();
+        updateLocalStorage();
         text.value = '';
         amount.value = '';
     }
@@ -73,7 +76,13 @@ function updateValues() {
 // Remove transaction by ID
 function removeTransaction(id) {
     transactions = transactions.filter(transaction => transaction.id !== id);
+    updateLocalStorage();
     init();
+}
+
+// Update local storage transactions
+function updateLocalStorage() {
+    localStorage.setItem('transactions', JSON.stringify(transactions));
 }
 
 // Init app
