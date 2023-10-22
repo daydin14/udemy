@@ -1,9 +1,55 @@
 ﻿@page "/"
+@using BlazorCRUD.Data
+@using Microsoft.EntityFrameworkCore
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Posts</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>Posts</h1>
 
-Welcome to your new app.
+<a href="/create" class="btn btn-success">Create</a>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<table class="table table-responsive table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID (PK)</th>
+            <th scope="col">Title</th>
+            <th scope="col">Contnet</th>
+            <th scope="col">CRUD</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(_posts != null)
+        {
+            foreach(var post in _posts)
+            {
+                <tr>
+                    <th scope="row">@post.Id</th>
+                    <td>@post.Title</td>
+                    <td>@post.Content</td>
+                    <td>
+                        <a href="/update/@post.Id" class="btn btn-warning">Update</a>
+                        <button @onclick="() => DeletePost(post)" class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@code {
+    [Inject] AppDBContext AppDBContext { get; set; }
+    private List<Post> _posts = new List<Post>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _posts = await AppDBContext.Posts.ToListAsync();
+    }
+
+    private async Task DeletePost(Post postToDelete)
+    {
+        AppDBContext.Posts.Remove(postToDelete);
+        await AppDBContext.SaveChangesAsync();
+        _posts.Remove(postToDelete);
+        StateHasChanged();
+    }
+}
