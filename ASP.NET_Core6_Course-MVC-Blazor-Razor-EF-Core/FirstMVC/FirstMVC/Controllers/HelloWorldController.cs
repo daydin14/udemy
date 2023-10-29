@@ -6,9 +6,9 @@ namespace FirstMVC.Controllers
 {
     public class HelloWorldController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "This is the Index page!";
+            return View();
         }
 
         public string Hello()
