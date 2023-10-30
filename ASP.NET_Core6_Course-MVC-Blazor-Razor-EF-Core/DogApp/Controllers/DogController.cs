@@ -5,7 +5,7 @@ using DogApp.Models;
 
 namespace DogApp.Controllers
 {
-    public class HelloWorldController : Controller
+    public class DogController : Controller
     {
         private static List<DogViewModel> dogs = new List<DogViewModel>();
         public IActionResult Index()
