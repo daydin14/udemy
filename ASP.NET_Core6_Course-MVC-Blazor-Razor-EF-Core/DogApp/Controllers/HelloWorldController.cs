@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using FirstMVC.Models;
+using DogApp.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace FirstMVC.Controllers
+namespace DogApp.Controllers
 {
     public class HelloWorldController : Controller
     {

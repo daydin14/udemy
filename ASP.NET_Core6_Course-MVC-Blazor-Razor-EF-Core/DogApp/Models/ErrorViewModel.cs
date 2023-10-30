@@ -1,4 +1,4 @@
-﻿namespace FirstMVC.Models;
+﻿namespace DogApp.Models;
 
 public class ErrorViewModel
 {

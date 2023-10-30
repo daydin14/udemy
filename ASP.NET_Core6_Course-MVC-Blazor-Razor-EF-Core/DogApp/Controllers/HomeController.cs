@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using FirstMVC.Models;
+using DogApp.Models;
 
-namespace FirstMVC.Controllers;
+namespace DogApp.Controllers;
 
 public class HomeController : Controller
 {

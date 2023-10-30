@@ -1,5 +1,5 @@
 ﻿using System;
-namespace FirstMVC.Models
+namespace DogApp.Models
 {
 	public class DogViewModel
 	{
