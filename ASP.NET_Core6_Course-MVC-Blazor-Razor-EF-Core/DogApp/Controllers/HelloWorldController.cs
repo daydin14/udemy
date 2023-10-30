@@ -7,14 +7,21 @@ namespace DogApp.Controllers
 {
     public class HelloWorldController : Controller
     {
+        private static List<DogViewModel> dogs = new List<DogViewModel>();
         public IActionResult Index()
         {
-            DogViewModel doggo = new DogViewModel() { Name = "Ky", Age = 6 };
-            return View(doggo);
+            return View(dogs);
         }
         public IActionResult Create()
         {
-            return View();
+            DogViewModel newDog = new DogViewModel();
+            return View(newDog);
+        }
+
+        public IActionResult CreateDog(DogViewModel dog)
+        {
+            dogs.Add(dog);
+            return RedirectToAction(nameof(Index));
         }
 
         public string Hello()

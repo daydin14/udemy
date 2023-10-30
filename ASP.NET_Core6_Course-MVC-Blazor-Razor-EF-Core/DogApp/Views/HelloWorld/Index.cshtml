@@ -1,10 +1,16 @@
-﻿@model DogApp.Models.DogViewModel
+﻿@model List<DogApp.Models.DogViewModel>
 
 @{
 
 }
 
-<h1>Hello World</h1>
-<p>This is the index page of the HelloWorld Controller</p>
-<h4>A dog name @Model.Name says hello.</h4>
-<h4>@Model.Name is @Model.Age years old.</h4>
+<h1>Dog App</h1>
+<h4>All Dogs!</h4>
+<div>
+    <ul>
+        @foreach (var dog in Model)
+        {
+            <li>@dog.Name (@dog.Age)</li>
+        }
+    </ul>
+</div>
