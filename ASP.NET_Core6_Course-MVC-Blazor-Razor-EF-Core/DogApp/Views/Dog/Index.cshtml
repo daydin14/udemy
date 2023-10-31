@@ -1,0 +1,16 @@
+﻿@model List<DogApp.Models.DogViewModel>
+
+@{
+
+}
+
+<h1>Dog App</h1>
+<h4>All Dogs!</h4>
+<div>
+    <ul>
+        @foreach (var dog in Model)
+        {
+            <li>@dog.Name (@dog.Age)</li>
+        }
+    </ul>
+</div>
