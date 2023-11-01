@@ -6,13 +6,19 @@ name: .NET
 on:
   push:
     branches: [ "master" ]
+    paths: 
+      - 'DogApp/**'
+      - 'BlazorCRUD/**'
   pull_request:
     branches: [ "master" ]
+    paths: 
+      - 'DogApp/**'
+      - 'BlazorCRUD/**'
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -26,3 +32,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Deploy
+      run: dotnet run
