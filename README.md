@@ -28,4 +28,12 @@ Welcome to my Udemy projects repository. This repository contains a collection o
 
 11. [Blog](https://daydin14.github.io/udemy/11.Blog){:target="\_blank"} - A simple blog website.
 
+### C-Sharp/Dotnet Based Projects
+
+1. [DogApp](https://github.com/daydin14/udemy/tree/master/DogApp){:target="\_blank"} - Semi-CRUD ASP.NET MVC Web Application of adding to a list of Dogs
+
+2. [Posts](https://github.com/daydin14/udemy/tree/master/BlazorCRUD){:target="\_blank"} - CRUD application for generic postings or list posts.
+
+---
+
 Feel free to click on the project links above to see the live demos and explore the source code. If you have any questions or feedback, please don't hesitate to reach out. Thanks for visiting!
