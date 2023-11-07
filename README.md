@@ -1,4 +1,4 @@
-# [Udemy Projects](https://daydin14.github.io/udemy){:target="\_blank"}
+# [Udemy Projects](https://daydin14.github.io/udemy)
 
 Welcome to my Udemy projects repository. This repository contains a collection of projects I've completed as part of my Udemy web development courses. Feel free to explore and try them out!
 
