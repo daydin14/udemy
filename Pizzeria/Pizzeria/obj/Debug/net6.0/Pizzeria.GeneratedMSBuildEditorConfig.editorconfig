@@ -16,12 +16,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/david/Dev/udemy/Pizzeria/Pizzeria
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/david/Dev/udemy/Pizzeria/Pizzeria/Pages/Checkout/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hlY2tvdXQvQ2hlY2tvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/david/Dev/udemy/Pizzeria/Pizzeria/Pages/Checkout/ThankYou.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hlY2tvdXQvVGhhbmtZb3UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/david/Dev/udemy/Pizzeria/Pizzeria/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/david/Dev/udemy/Pizzeria/Pizzeria/Pages/Forms/CustomPizza.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRm9ybXMvQ3VzdG9tUGl6emEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/david/Dev/udemy/Pizzeria/Pizzeria/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/david/Dev/udemy/Pizzeria/Pizzeria/Pages/Pizza.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGl6emEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/david/Dev/udemy/Pizzeria/Pizzeria/Pages/Privacy.cshtml]
